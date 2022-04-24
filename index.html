@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+
+    <title>Form de validação</title>
+</head>
+<body>
+    <main>
+        <section>
+            <h1>Academy Coders</h1>
+            <h2>Cadastre-se para ter acesso ao sistema</h2>
+    
+            <form id="form-registro">
+                <div class="full-box">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" placeholder="Digite seu email">
+                </div>
+    
+                <div class="half-box spacing">
+                    <label for="name">Nome</label>
+                    <input type="text" name="name" id="name" placeholder="Agora digite seu nome">
+                </div>
+    
+                <div class="half-box">
+                    <label for="lastname">Sobrenome</label>
+                    <input type="text" name="lastname" id="lastname" placeholder="Agora digite seu sobrenome">
+                </div>
+    
+                <div class="half-box spacing">
+                    <label for="password">Senha</label>
+                    <input type="password" name="password" id="password" placeholder="Crie sua senha">
+                </div>
+    
+                <div class="half-box">
+                    <label for="passconfirmation">Digite a senha novamente</label>
+                    <input type="password" name="passconfirmation" id="passconfirmation" placeholder="Confirme a senha">
+                </div>
+    
+                <div class="full-box">
+                    <input type="checkbox" name="agreement" id="agreement">
+                    <label for="agreement" id="agreement-label">Eu li e aceito os <a href="#">termos de uso</a></label>
+                </div>
+    
+                <div class="full-box">
+                    <input type="submit" value="Cadastrar" id="btn-submit">
+                </div>
+            </form>
+    
+            <p class="error-validation"></p>
+        </section>
+    </main>
+
+    <script src="./main.js"></script>
+</body>
+</html>
